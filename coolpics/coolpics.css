@@ -73,6 +73,7 @@ main h3 {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
     }
 
     #menu {
