@@ -21,11 +21,6 @@ body {
     font-family: var(--primary-font);
     font-size: 1.2em;
 }
-
-a:link, a:visited {
-    color: var(--accent-color);
-}
-
 header, footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -45,21 +40,70 @@ img {
     margin: 10px;
 }
 
-.link-button {
-    background-color: transparent;
-    border: none;
-    color:var(--text-light);
-    text-decoration: underline;
-    padding: 5px 10px;
-    font-weight: bold;
-}
-
-.link-button:hover {
-    cursor: pointer;
-}
-
 main h3 {
     margin: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: var(--text-light);
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 2rem;
+}
+
+.menu-button a {
+    color: inherit;
+}
+
+.menu-button:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--text-light);
+}
+
+.viewer {
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    z-index: 10;
+}
+
+.close-viewer {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    grid-row: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.viewer img {
+    max-height: 100%;
+    width: 100%;
+    grid-row: 2;
+    object-fit: cover;
 }
 
 @media  (min-width: 700px) {
@@ -76,7 +120,25 @@ main h3 {
         flex-direction: row;
     }
 
-    #menu {
+    .menu-button {
         display: none;
     }
+
+    .menu {
+        display: flex;
+    }
+
+    .viewer {
+        position: fixed;
+        top: 10%;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .viewer img {
+        max-height: 80vh;
+        width: 100%;
+    }
+
 }
