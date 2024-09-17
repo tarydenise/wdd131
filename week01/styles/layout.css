@@ -4,13 +4,15 @@ body {
     grid-template-columns: 1fr;
     height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    border-color: #c8a2c8;
-    color: black;
+    font-family: sans-serif;
+    background-color: #f6d1f6;
+    border-color: plum;
+    color: purple;
 }
 
 header {
     background-color: #fff;
+    border-color: plum;
     padding: 20px;
     text-align: center;
 }
@@ -29,6 +31,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: plum;
 }
 
 nav ul li a:hover {
@@ -37,7 +40,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    background-color: #fff;
+    background-color: white;
     border: 1px solid plum;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
