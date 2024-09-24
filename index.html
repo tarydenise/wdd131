@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tary-Denise Tupouata - Home Page">
+    <meta name="author" content="Tary-Denise Tupouata">
     <title>WDD 131</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
+
 <body>
-    <h1>WDD 131 - Tupouata</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Tary-Denise M. Tupouata</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/tary-denise/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/18?lang=eng"
+                        target="_blank">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card-grid">
+            <div class="card1">
+                <h2>About Me</h2>
+                <section class="aboutMe">
+                    <p>My name is Tary-Denise and I go by Tary. I am of Tongan descent, but I was born in Redwood City,
+                        California and I now live 30 minutes away in San Leandro. I am currently a stay-at-home mom and
+                        online
+                        student. I am married with 3 wonderful children. I love traveling and doing cool things. My
+                        motto is:
+                        "Live to thrive, not just survive."</p>
+                    <img src="images/tarydenise_portrait.png" alt="Self-Portrait of Tary-Denise">
+                </section>
+                <h3>Tonga</h3>
+                <section class="tonga">
+                    <img src="images/tongan_flag.jpg" alt="Image of the Tongan flag">
+                    <p>Tonga is a Polynesian kingdom in the South Pacific. Tonga is known for its rich
+                        cultural heritage, including traditional music and dance. The economy is primarily based on
+                        agriculture, tourism, and remittances from Tongans living
+                        abroad. The Tongan flag reflects the Christian faith and identity of the Tongan people. </p>
+                </section>
+            </div>
+            <div class="card2">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://example.com/resource11" target="_blank">Resource Link 1</a></li>
+                    <li><a href="https://example.com/resource11" target="_blank">Resource Link 2</a></li>
+                    <li><a href="https://example.com/resource11" target="_blank">Resource Link 3</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+            Tary-Denise M. Tupouata
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
