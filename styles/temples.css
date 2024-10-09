@@ -1,0 +1,108 @@
+:root {
+
+    --primary-color: #12429a;
+    --primary-text-color: #fff;
+    --secondary-text-color: black;
+    --background-color: #eee;
+    --link-color: #3c045b;
+
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Arial', sans-serif;
+    --font-size-large: 24px;
+    --font-size-base: 16px;
+    --font-weight-bold: 700;
+}
+
+/* Reset page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header,
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-secondary);
+}
+
+h2 {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 1rem;
+    font-size: var(--font-size-large);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+}
+
+/* testing menu js */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--primary-text-color);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--primary-text-color);
+}
+
+/* open class is toggled on 'click' */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+}
+
+/* body */
+body {
+    font-family: var(--font-family-primary);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}

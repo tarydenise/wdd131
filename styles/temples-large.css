@@ -1,0 +1,35 @@
+@media (min-width: 760px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 20px;
+        place-items: center;
+        margin: 1rem auto;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* testing toggle menu codePen*/
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
