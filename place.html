@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tary's WDD 131 Dynamic Web Fundamentals Week 3 Assignment">
+    <meta name="author" content="Tary-Denise Tupouata, Software Development Student at BYUI">
+
+    <title>W03 Assignment</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+        <div class="accent-bar"></div>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/japan-large.webp">
+                <img src="images/japan-small.webp" alt="small image of japanese poles" width="500" height="250">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <section class="card data">
+            <h2>Data</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="label">Area:</span>
+                    <span class="value">377,975 sq km</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Population:</span>
+                    <span class="value">123,577,504</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Tokyo</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Languages:</span>
+                    <span class="value">Japanese</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Japanese Yen </span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC+9</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+81</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.jp</span>
+                </div>
+            </div>
+        </section>
+        <div class="accent-line"></div>
+        <section class="card weather">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="images/weather-mobile.svg" alt="icon of weather" width="100" height="100">
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="label">Temperature:</span>
+                    <span class="value">18&deg;C</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Conditions:</span>
+                    <span class="value">Mostly Cloudy</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Wind:</span>
+                    <span class="value">22 km/h</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value" id="wcf">22&deg;C</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+            Tary-Denise M. Tupouata
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

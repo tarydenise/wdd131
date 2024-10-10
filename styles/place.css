@@ -1,0 +1,93 @@
+:root {
+    --primary-color-bold: #7E180A;
+    --secondary-color-bold: #dd5418;
+    --primary-color-light: #8e6253;
+    --secondary-color-light: #625353;
+    --accent-color: #402d28;
+
+    --primary-font-family: 'Roboto Slab', serif;
+    --secondary-font-family: 'Noto Sans', sans-serif;
+}
+
+/* Reset page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--secondary-font-family);
+}
+
+/* Header */
+header,
+footer {
+    background-color: var(--primary-color-bold);
+    color: #fff;
+    text-align: center;
+    font-family: var(--primary-font-family);
+}
+
+h1 {
+    font-size: 1.5rem;
+    background-color: var(--primary-color-bold);
+    padding: 40px;
+}
+
+.accent-bar {
+    background-color: var(--secondary-color-bold);
+    height: 15px;
+    width: 100%;
+}
+
+.accent-line {
+    background-color: var(--primary-color-bold);
+    height: 1px;
+    width: 100%;
+    opacity: 50%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Body */
+.card {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.weather {
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.info-list {
+    line-height: 1.6;
+}
+
+.info-item {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 1rem; */
+}
+
+.label {
+    font-weight: bold;
+    font-size: .85rem;
+    text-align: right;
+}
+
+.value {
+    font-size: .9rem;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
