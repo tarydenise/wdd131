@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tary's WDD131, W05 Assignment: Product Review Form">
+    <meta name="author" content="Tary-Denise M. Tupoauta">
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf1">
+        <fieldset>
+            <legend>Product Name</legend>
+            <select id="products" name="product" required>
+                <option value="" disabled selected>Choose a Product... </option>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="stars">
+                <label><input id="star1" type="radio" name="rating" value="1" required>&star;</label>
+                <label><input id="star2" type="radio" name="rating" value="2" required>&star;&star;</label>
+                <label><input id="star3" type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+                <label><input id="star4" type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                <label><input id="star5" type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation</legend>
+            <label><input type="date" name="installationDate"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Which features di you find useful in the product?</legend>
+            <legend>(Check all that apply)</legend>
+            <label><input id="durability" type="checkbox" name="durability" value="yes"> Durability</label>
+            <label><input id="easeofuse" type="checkbox" name="easeofuse" value="yes"> Ease of Use</label>
+            <label><input id="performance" type="checkbox" name="performance" value="yes"> Performance</label>
+            <label><input id="design" type="checkbox" name="design" value="yes"> Design</label>
+        </fieldset>
+        <fieldset>
+            <legend>Written Review (optional)</legend>
+            <textarea id="review" name="review" rows="5" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Your Name (Optional)</legend>
+            <label><input id="username" type="text" name="username"></label>
+        </fieldset>
+        <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+            | Tary-Denise M. Tupouata |
+            <span class="divider">
+                <i class="fas fa-circle"></i>
+            </span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
