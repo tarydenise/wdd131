@@ -1,0 +1,27 @@
+@media (min-width: 760px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* testing toggle menu codePen*/
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
